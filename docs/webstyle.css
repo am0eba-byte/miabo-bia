@@ -8,9 +8,37 @@ color: indigo;
 font-family: 'Quicksand', sans-serif;
 }
 
+div.header {
+    text-align: center;
+}
 
-
-ol {list-style-type: lower-alpha;
-padding: 5em;
+div.navbar {
+    word-spacing: 30px;
+}
     
+div.content {
+    margin: auto;
+}
+
+div.images {
+    display: flex;
+    flex-direction:row;
+    
+}
+
+div.images img {
+    flex:1;
+}
+
+div.images div {
+    flex:1;
+}
+
+footer{
+    display: flex;
+    text-align: center;
+}
+
+footer p {
+    flex: 1;
 }
