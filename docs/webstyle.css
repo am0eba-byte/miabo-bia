@@ -1,4 +1,4 @@
-
+                    /* GENERAL STYLE */
 body {
 background-color: /*BurlyWood*/ #F0F8FF;
 color: indigo; 
@@ -14,10 +14,43 @@ div.header {
 
 div.navbar {
     word-spacing: 30px;
+    margin-bottom:30px;
 }
+
+footer{
+    display: flex;
+    text-align: center;
+}
+
+footer p {
+    flex: 1;
+}
+    
+                 /* HOMEPAGE STYLE */
     
 div.content {
     margin: auto;
+}
+
+div#profilePhoto {
+    justify-content:center;
+    display:flex;
+    padding:20px;
+}
+
+div#profilePhoto img {
+    width:250px;
+    border-radius:90px;
+}
+
+section#home {
+    margin:30px;
+}
+
+div.textContent {
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 30px;
 }
 
 div.images {
@@ -34,11 +67,57 @@ div.images div {
     flex:1;
 }
 
-footer{
-    display: flex;
-    text-align: center;
+
+                /* PORTFOLIO STYLE */
+                
+div.websites {
+    
 }
 
-footer p {
-    flex: 1;
+img.link {
+    
+}
+
+div#stuff {
+    margin:40px;
+}
+
+img.link:hover {
+    opacity: .6;
+}
+
+div.vidContain {
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    flex-wrap: wrap;
+    }
+    
+div.vid {
+    flex:1;
+}
+
+p.caption {
+    margin-top:2px;
+    margin-bottom: 20px;
+}
+
+
+
+                    /* RESUME STYLE */
+
+
+div#resumeMarg {
+    margin:40px;
+    padding-left:20px;
+}
+
+div#skillz {
+    padding:60px;
+}
+
+div#XP {
+    
+    padding-right:140px;
+    padding-left:30px;
 }
