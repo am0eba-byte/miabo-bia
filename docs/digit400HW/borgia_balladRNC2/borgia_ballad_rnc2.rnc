@@ -1,0 +1,58 @@
+start = xml
+
+xml = element xml {poem+}
+
+poem = element poem {draft, header, body, docDesc?}
+
+draft = attribute draft {"final" | xsd:integer}
+
+
+
+header = element header {title, docDesc}
+
+title = element title {mixed{(pseudo | person)*}}
+
+
+pseudo = element pseudo {type, desc?, for?, docSpan?, where?, orientation?,(mixed{pseudo*, person*} | empty)}
+
+type = attribute type {text}
+desc = attribute desc {text}
+for = attribute for {text}
+docSpan = attribute docSpan {text}
+where = attribute where {text}
+orientation = attribute orientation {text}
+
+person = element person {xmlid?, ref?, who?, text}
+
+xmlid = attribute xml:id {text}
+ref = attribute ref {text}
+who = attribute who {text}
+
+
+
+docDesc = element docDesc {where?, orientation?, mixed{(person?, version?, date?, pseudo?, version?, location?)*}}
+
+version = element version {(n | which), pseudo?, text?}
+
+n = attribute n {xsd:integer}
+which = attribute which {text}
+
+date = element date {month?, day?, year, text}
+
+month = attribute month {xsd:integer}
+day = attribute day {xsd:integer}
+year = attribute year {xsd:gYear}
+
+
+body = element body {(l+, pseudo*, motif*)*}
+
+l = element l {n, mixed{(pseudo | person)*, location*, date*}}
+
+location = element location {type, (city?, state, country)?, text}
+city = attribute city {text}
+state = attribute state {text}
+country = attribute country {text}
+
+motif = element motif {(xmlid | ref)?, (l | pseudo)*}
+
+
