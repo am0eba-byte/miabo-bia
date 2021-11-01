@@ -368,6 +368,62 @@ div.embed-footer {
     display:none;
 }
 
+div.logos {
+    display:flex;
+    justify-content:center;
+    flex-direction:column;
+    background-image: linear-gradient(to top, beige, paleturquoise, beige);
+    padding-top: 2%;
+
+    margin-left: 2%;
+    margin-right: 2%;
+    border-radius: 15px;
+}
+
+div.logoWrap {
+    flex: 1;
+    display: flex;
+flex-direction: column;
+justify-content: center;
+}
+
+video.gif {
+    width: 30vw;
+    align-self: center;
+}
+
+img.logo {
+    width: 20vw;
+    align-self:center;
+}
+
+div.graphics {
+    display:flex;
+    justify-content:center;
+    flex-direction:column;
+    background-image: linear-gradient(to top, beige, paleturquoise, beige);
+    padding-top: 2%;
+
+    margin-left: 2%;
+    margin-right: 2%;
+    border-radius: 15px;
+}
+
+div.posterWrap {
+    display: flex;
+flex-direction: column;
+justify-content: center;
+}
+
+div.posterWrap p {
+    text-align: center;
+}
+
+div.logoWrap p {
+    text-align: center;
+}
+
+
 
 
 
