@@ -1,12 +1,12 @@
 :root{
     font-size:16px;
-    font-family: 'Architects Daughter', cursive;
+    font-family: 'Montserrat', cursive;
     --bg-primary:antiquewhite;
 
 }
 
 body {
-    font-family: 'Architects Daughter', cursive;
+    font-family: 'Montserrat', cursive;
     background-color: antiquewhite;
     font-size: larger;
     margin:0;
@@ -31,10 +31,10 @@ main{
 }
 
 
-p {
-    font-family: 'Neucha', cursive;
+/* p {
+    font-family: 'Montserrat', cursive;
     word-spacing: .4em;
-}
+} */
 
 header {
     text-align: center;
@@ -47,6 +47,14 @@ header {
 .head {
     line-height: .6em;
 
+}
+
+h1.head{
+    font-family: 'Julius Sans One', cursive;
+}
+
+h3.head {
+    font-family:'Julius Sans One', cursive;
 }
 
 /* NAVBAR */
@@ -63,6 +71,7 @@ nav{
     align-items:center;
     justify-content: space-evenly;
     transition:200ms ease;
+    font-family: 'Josefin Sans', cursive;
 }
 
 nav:hover{
@@ -160,6 +169,15 @@ p.foot a:hover {
 
 .bio p {
     text-indent: 2em;
+    /* font-family: 'Special Elite', cursive; */
+}
+
+span.sig{
+    font-family: 'Special Elite', cursive;
+    text-align:right;
+    display:block;
+    padding-right:3vw;
+    font-size: larger;
 }
 
 div.picWrap {
@@ -203,8 +221,11 @@ section.courseCont {
 }
 
 h1.heading {
-
+    font-family:'Josefin Sans', cursive;
     text-align: center;
+    margin-bottom:0;
+    margin-top:60px;
+    text-decoration: underline;
 }
 
 h2.subhead {
@@ -294,6 +315,20 @@ div.video {
 
 div.video p {
     text-align: center;
+    font-size:smaller;
+    font-family:'Josefin Sans', cursive;
+}
+
+div#vidRowWrap{
+    display: grid;
+    grid-template-columns: 50% 50%;
+grid-column-start: 1;
+grid-column-end: 3;
+}
+
+div.section figcaption p {
+    font-size:smaller;
+    font-family:'Josefin Sans', cursive;
 }
 
 
@@ -315,8 +350,9 @@ div.animation {
 }
 
 div.intern {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    /* grid-template-columns: 30% 30% 30%; */
+    grid-template-rows: 50% 50%;
     background-image: linear-gradient(to top, beige, paleturquoise, beige);
     padding-top: 2%;
 
@@ -328,11 +364,9 @@ div.intern {
 div.row {
     display: flex;
     justify-content: center;
+    flex-wrap:wrap;
 }
 
-div.site {
-
-}
 
 img.img {
     width: 30vw;
@@ -340,8 +374,18 @@ img.img {
     transition: .3s;
 }
 
+img.siteimg{
+    width:40vw;
+    height:20vw;
+    transition:.3s;
+}
+
 img.img:hover {
     opacity: .6;
+}
+
+img.siteimg:hover{
+    opacity:.6;
 }
 
 div.personal {
@@ -357,13 +401,10 @@ div.personal {
 
 h2.subhead {
     text-indent: 4em;
+    margin-bottom:2px;
 }
 
 h1.heading {
-    text-align: center;
-}
-
-div.site p {
     text-align: center;
 }
 
@@ -380,6 +421,7 @@ display: flex;
     margin-left: 2%;
     margin-right: 2%;
     border-radius: 15px;
+    margin-bottom: 5vw;
 }
 
 div.slides {
@@ -450,12 +492,25 @@ justify-content: center;
 
 div.posterWrap p {
     text-align: center;
+    font-size:smaller;
+    font-family:'Josefin Sans', cursive;
 }
 
 div.logoWrap p {
     text-align: center;
+    font-size:smaller;
+    font-family:'Josefin Sans', cursive;
 }
+/* 
+div.site{
 
+} */
+
+div.site p {
+    text-align: center;
+    font-size:smaller;
+    font-family:'Josefin Sans', cursive;
+}
 
 
 
