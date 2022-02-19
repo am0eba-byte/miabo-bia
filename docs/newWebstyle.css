@@ -466,8 +466,8 @@ div.logoWrap p {
  div.resume {
     font-family:courier, fixed, monospace;
     width:80vw;
-    margin-top:5vw;
-    margin-bottom:5vw;
+    margin-top:1vw;
+    margin-bottom:1vw;
     margin-left: 2vw;
     margin-right:2vw;
     align-items: center;
@@ -477,7 +477,7 @@ div.logoWrap p {
 }
 
 main#resume{
-    margin-left:16vw;
+    margin-left:12vw;
     
 }
 
@@ -528,6 +528,18 @@ div#XP {
 
     --outline:#2d4356;
     --blackline: #626975;
+
+    /* ROCKET COLORS */
+
+    --sun:#F1F8CE;
+    --sunCircle:#388678;
+
+    --smolCirc:#ABF4E7;
+    --exlCirc:#3c4992;
+    --waves:#59DCC9;
+    
+    --stars:#0DCEB1;
+    --skyCircs:#2E475A;
 }
 
 #darkHair{
@@ -563,7 +575,13 @@ div#XP {
 #lightCircle,
 #container,
 #bulbHead,
-#lightbulb{
+#lightbulb,
+#sunCircle,
+#smolcirc,
+#exlCirc,
+#sun,
+#stars,
+#skyCircs{
     transition: all 1s ease;
 }
 
@@ -645,3 +663,67 @@ svg#schoolProj:hover #bulbHead{
 /* green line: #5bbe88
     white line: #dae8f0*/
 
+
+    /* OTHER PROJ SVG (ROCKET) */
+
+#sun{
+    fill:var(--sun)
+}
+
+#sunCircle{
+    fill:var(--sunCircle);
+    opacity: .8;
+    transform-origin:center;
+}
+
+#smolcirc{
+    fill:var(--smolCirc)
+}
+
+#exlCirc{
+    fill:var(--exlCirc)
+}
+
+#Lwaves, #Rwaves{
+    stroke: var(--waves);
+}
+
+#stars{
+    stroke:var(--stars);
+    transform-origin: center;
+}
+
+#skyCircs{
+    stroke:var(--skyCircs);
+    transform-origin: center;
+}
+
+svg#otherProj:hover #sunCircle{
+    transform:translateY(-60%);
+   opacity:.5;
+   fill:var(--face)
+}
+
+svg#otherProj:hover #smolcirc{
+    transform:translateX(60%);
+    fill:var(--exlCirc)
+}
+
+svg#otherProj:hover #exlCirc{
+    transform:translateX(-50%);
+    fill:var(--smolCirc)
+}
+/* 
+svg#otherProj:hover #sun{
+    fill:#ccbe82
+} */
+
+svg#otherProj:hover #stars{
+    /* transform:translate(0%,20%); */
+    /* transform:scaleY(105%) */
+    transform:scale(109%)
+}
+svg#otherProj:hover #skyCircs{
+    /* transform:translate(5%,20%) */
+    transform:scale(105%)
+}
