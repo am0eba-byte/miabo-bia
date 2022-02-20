@@ -593,8 +593,17 @@ div#XP {
     --exlCirc:#3c4992;
     --waves:#59DCC9;
     
-    --stars:#0DCEB1;
+    --stars:#ffffff;
     --skyCircs:#2E475A;
+
+    /* RESUME COLORS */
+
+    --burnCircle:#e6e59c;
+    --aqua:#388678;
+    --blueCircle:#8EB6D5;
+    --cyanCircle:#68F1D9;
+
+
 }
 
 #darkHair{
@@ -636,7 +645,12 @@ div#XP {
 #exlCirc,
 #sun,
 #stars,
-#skyCircs{
+#skyCircs,
+#burnCircle,
+#blueCircle,
+#cyanCircle,
+#textLines path,
+.star{
     transition: all 1s ease;
 }
 
@@ -727,7 +741,7 @@ svg#schoolProj:hover #bulbHead{
 
 #sunCircle{
     fill:var(--sunCircle);
-    opacity: .8;
+    opacity: .7;
     transform-origin:center;
 }
 
@@ -781,4 +795,92 @@ svg#otherProj:hover #stars{
 svg#otherProj:hover #skyCircs{
     /* transform:translate(5%,20%) */
     transform:scale(105%)
+}
+
+
+/* RESUME ICON */
+
+.star{
+    stroke:var(--aqua)
+}
+
+#svg#resume:hover .star{
+    stroke:var(--stars)
+}
+
+#burnCircle{
+    fill:var(--burnCircle);
+    transform-origin: center;
+    transform:scale(0%);
+}
+
+svg#resume:hover #stars{
+    /* transform:translate(0%,20%); */
+    /* transform:scaleY(105%) */
+    transform:scale(110%);
+    stroke:var(--stars)
+}
+svg#resume:hover #skyCircs{
+    /* transform:translate(5%,20%) */
+    transform:scale(90%)
+}
+
+svg#resume:hover #burnCircle{
+    transform:scale(120%);
+    fill:#bbb374bd;
+}
+
+svg#resume:hover #RlineTopBlk, 
+svg#resume:hover #RlineTopBlue{
+    transform:translateX(-10%);
+}
+svg#resume:hover #LlineTopBlue,
+svg#resume:hover #LlineMidSmolBlk{
+    transform:translateX(35%);
+}
+svg#resume:hover #LlineMidLongBlk{
+    transform:translateX(14%)
+}
+svg#resume:hover #RlineBotBlue{
+    transform:translateX(-21%);
+}
+svg#resume:hover #RlineBotBlk{
+    transform:translateX(-35%);
+}
+
+svg#resume #stars{
+    fill:white;
+}
+
+#blueCircle{
+    transform-origin: unset;
+    fill:var(--blueCircle);
+    transform:scale(110%);
+    transform:translate(-25%, -29%);
+    /* opacity:.5; */
+    /* transform:scale(80%); */
+}
+svg#resume:hover #blueCircle {
+    transform:rotate(180deg);
+    fill:#ABF4E7;
+    opacity:1;
+   
+}
+
+#cyanCircle{
+    fill:var(--cyanCircle);
+    transform-origin: unset;
+    transform:scale(110%);
+    transform:translate(24%, 29%);
+    /* opacity:.5; */
+}
+svg#resume:hover #cyanCircle{
+    /* transform:translate(-50%, 50%); */
+    transform:rotate(180deg);
+    fill:#8EB6D5;
+    opacity:1;
+}
+
+svg#resume #lightCircle{
+    opacity:.8;
 }
