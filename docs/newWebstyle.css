@@ -271,11 +271,15 @@ div.threeD {
 }
 
 
-div.img {
+div.img,
+div.threeJSimg,
+div.mayanimg {
     transition: .3s;
 }
 
-div.img:hover {
+div.img:hover,
+div.threeJSimg:hover,
+div.mayanimg:hover {
     opacity: .6;
 }
 
@@ -326,12 +330,53 @@ grid-column-start: 1;
 grid-column-end: 3;
 }
 
-div.section figcaption p {
+div.section figcaption p,
+div.webdevSection figcaption p{
     font-size:smaller;
     font-family:'Josefin Sans', cursive;
 }
 
+div.webdevSection {
+    display: grid;
+    grid-template-columns: 40vw 40vw;
+    align-content: center;
+    justify-content: space-evenly;
+    background-image: linear-gradient(to top, beige, paleturquoise, beige);
+    padding-top: 2%;
 
+    margin-left: 2%;
+    margin-right: 2%;
+    border-radius: 15px;
+}
+
+figure.spanCols{
+    grid-column-start: 1;
+    grid-column-end: span 2;
+    align-content: stretch;
+}
+
+figure.spanCols figcaption{
+    margin-left: 9vw;
+margin-right: 9vw;
+}
+
+div.threeJSimg{
+    display: flex;
+    justify-content: center;
+}
+
+img#threeJS{
+    width:60vw;
+    height:20vw;
+}
+
+div.mayanimg{
+    display:flex;
+    justify-content: center;
+}
+img#mayans{
+    width: 60vw;
+}
 
 
 /* OTHER PROJ */
