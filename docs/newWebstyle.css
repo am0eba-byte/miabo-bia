@@ -141,6 +141,30 @@ p.foot a:hover {
 
 /* HOMEPAGE */
 
+.headText{
+    background-color: antiquewhite;
+    border-radius: 5px;
+    padding:1px;
+    display:inline-block;
+    padding-left: 10px;
+padding-right: 10px;
+margin-top:10px;
+}
+
+section.headerBGwrap{
+    background-image:url(images/flowerclouds.JPG);
+    height: 70vh;
+    max-height:75%;
+    position: absolute;
+    z-index: -1;
+    width: 98vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 0;
+    right:0;
+    opacity:.65;
+    min-height:490px;
+}
 
 .me {
     display: flex;
@@ -156,7 +180,7 @@ p.foot a:hover {
 .bio {
     margin: 2%;
     background-image: linear-gradient(to top, beige, paleturquoise, beige);
-    border-radius: 25px;
+    border-radius: 8px;
     padding-left: 3%;
     padding-right: 3%;
     padding-top: 1%;
@@ -182,16 +206,26 @@ span.sig{
 
 div.picWrap {
     display: flex;
-justify-content: space-evenly;
+justify-content: center;
 margin: 2vw;
 flex-direction:row;
-
-
 }
 
 /* div.picWrap div{
     width:50vw;
 } */
+
+img#rosysky{
+    height: 16vw;
+}
+
+img#mort{
+    height:50vw;
+}
+
+img#giraffe{
+    height:40vw;
+}
 
 div.picWrap div img{
     width:35vw;
@@ -202,6 +236,10 @@ div.picRow {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+}
+
+div.picRow img{
+    margin:2px;
 }
 
 
@@ -243,7 +281,7 @@ div.animation {
     padding-bottom: 1%;
     margin-left: 2%;
     margin-right: 2%;
-    border-radius: 15px;
+    border-radius: 8px;
 }
 
 div.section {
@@ -256,18 +294,17 @@ div.section {
 
     margin-left: 2%;
     margin-right: 2%;
-    border-radius: 15px;
+    border-radius: 8px;
 }
 
-div.section figure
 
 div.threeD {
     background-image: linear-gradient(to top, beige, paleturquoise, beige);
     padding-top: 2%;
-
+margin-bottom: 2%;
     margin-left: 2%;
     margin-right: 2%;
-    border-radius: 15px;
+    border-radius: 8px;
 }
 
 
@@ -346,7 +383,7 @@ div.webdevSection {
 
     margin-left: 2%;
     margin-right: 2%;
-    border-radius: 15px;
+    border-radius: 8px;
 }
 
 figure.spanCols{
@@ -391,7 +428,7 @@ div.animation {
 
     margin-left: 2%;
     margin-right: 2%;
-    border-radius: 15px;
+    border-radius: 8px;
 }
 
 div.intern {
@@ -403,7 +440,7 @@ div.intern {
 
     margin-left: 2%;
     margin-right: 2%;
-    border-radius: 15px;
+    border-radius: 8px;
 }
 
 div.row {
@@ -441,7 +478,7 @@ div.personal {
 
     margin-left: 2%;
     margin-right: 2%;
-    border-radius: 15px;
+    border-radius: 8px;
 }
 
 h2.subhead {
@@ -465,7 +502,7 @@ display: flex;
 
     margin-left: 2%;
     margin-right: 2%;
-    border-radius: 15px;
+    border-radius: 8px;
     margin-bottom: 5vw;
 }
 
@@ -497,7 +534,7 @@ div.logos {
 
     margin-left: 2%;
     margin-right: 2%;
-    border-radius: 15px;
+    border-radius: 8px;
 }
 
 div.logoWrap {
@@ -513,8 +550,11 @@ video.gif {
 }
 
 img.logo {
-    width: 20vw;
-    align-self:center;
+    max-width: 15vw;
+    align-self: center;
+    max-height: 14vw;
+    padding-left: 6vw;
+padding-right: 6vw;
 }
 
 div.graphics {
@@ -526,7 +566,7 @@ div.graphics {
 
     margin-left: 2%;
     margin-right: 2%;
-    border-radius: 15px;
+    border-radius: 8px;
 }
 
 div.posterWrap {
@@ -877,7 +917,7 @@ svg#resume:hover #burnCircle{
 
 svg#resume:hover #RlineTopBlk, 
 svg#resume:hover #RlineTopBlue{
-    transform:translateX(-10%);
+    transform:translateX(-14%);
 }
 svg#resume:hover #LlineTopBlue,
 svg#resume:hover #LlineMidSmolBlk{
