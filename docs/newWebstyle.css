@@ -44,6 +44,22 @@ header {
     margin:1vw;
 }
 
+div.LIwrap{
+    display:flex;
+    position: absolute;
+right: 2vw;
+top: 1vw;
+}
+
+img.LI:hover{
+    opacity:.6;
+}
+
+img.LI{
+    width:5vw;
+    transition:.3s;
+}
+
 .head {
     line-height: .6em;
 
