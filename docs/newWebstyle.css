@@ -31,6 +31,8 @@ main{
 }
 
 
+
+
 /* p {
     font-family: 'Montserrat', cursive;
     word-spacing: .4em;
@@ -431,6 +433,64 @@ img#mayans{
     width: 60vw;
 }
 
+div.imgCol{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+div.tut{
+    justify-content: center;
+    display: flex;
+    background-image: linear-gradient(to top, beige, paleturquoise, beige);
+    padding-top: 2%;
+
+    margin-left: 2%;
+    margin-right: 2%;
+    border-radius: 8px;
+}
+
+img.tut {
+    max-width: 40vw;
+max-height: 20vw;
+}
+
+figure div.center {
+    display:flex;
+    justify-content: center;
+}
+
+div.datavizSect{
+    display:flex;
+    justify-content: center;
+    background-image: linear-gradient(to top, beige, paleturquoise, beige);
+    padding-top: 2%;
+
+    margin-left: 2%;
+    margin-right: 2%;
+    border-radius: 8px;
+
+}
+
+figure.datavizWrap{
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+div.tut div.imgCol figure figcaption{
+    font-family: 'Josefin Sans', cursive;
+    font-size: smaller;
+}
+
+img.dataviz{
+    width:60vw;
+}
+
+figure.datavizWrap figcaption p{
+    font-family: 'Josefin Sans', cursive;
+    font-size: smaller;
+}
 
 /* OTHER PROJ */
 
@@ -535,6 +595,7 @@ div.slides p {
 
 iframe#KDHslides {
     align-self:center;
+    max-width:50vw;
 }
 
 div.embed-footer {
@@ -635,6 +696,40 @@ div.site p {
 main#resume{
     margin-left:12vw;
     
+}
+
+@media only screen and (max-width: 768px){
+    main#resume{
+        margin-left:17.5vw;
+        margin-top: 10vw;
+    }
+    nav#rez{
+        width:6rem;
+        height: 100vh;
+        position: fixed;
+        background-image:linear-gradient(to right, var(--darkCircle), var(--bigCircle), paleturquoise, beige);
+        top: 0;
+        display:flex;
+        flex-direction: column;
+        align-items:center;
+        justify-content: space-evenly;
+        transition:200ms ease;
+        font-family: 'Josefin Sans', cursive;
+    }
+    
+    nav#rez:hover{
+        width:14rem;
+    }
+    
+    nav#rez:hover .link-text{
+        display:contents;
+        
+    }
+    
+    nav#rez a.nav-link svg{
+        max-width:20vw;
+        min-width: 5rem;
+    }
 }
 
 div.resume img{
