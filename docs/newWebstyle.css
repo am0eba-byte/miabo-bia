@@ -46,12 +46,7 @@ header {
     margin:1vw;
 }
 
-div.LIwrap{
-    display:flex;
-    position: absolute;
-right: 2vw;
-top: 1vw;
-}
+
 
 img.LI:hover{
     opacity:.6;
@@ -92,6 +87,11 @@ nav{
     font-family: 'Josefin Sans', cursive;
 }
 
+div.LIwrap{
+    display:flex;
+    position: absolute;
+}
+
 nav:hover{
     width:15rem;
 }
@@ -104,12 +104,13 @@ nav:hover .link-text{
 .nav-link{
     display:flex;
     align-items: center;
-    width:inherit;
     height: 5rem;
     color:#1e1e24;
     text-decoration: none;
 }
 
+/* DESKTOP SCREENS */
+@media only screen and (min-width: 768px){
 .nav-link svg{
      min-width:7rem; 
   margin-left:.3rem;
@@ -117,7 +118,23 @@ nav:hover .link-text{
     position:sticky;
     left:0;
 }
+.nav-link{
+    display:flex;
+    align-items: center;
+    width:inherit;
+    height: 5rem;
+    color:#1e1e24;
+    text-decoration: none;
+}
 
+div.LIwrap{
+ 
+right: 2vw;
+top: 1vw;
+}
+
+
+}
 .link-text{
     display:none;
     margin-left:1rem;
@@ -680,17 +697,11 @@ div.site p {
                     /* RESUME STYLE */
 
 
- div.resume {
-    font-family:courier, fixed, monospace;
-    width:80vw;
-    margin-top:1vw;
-    margin-bottom:1vw;
-    margin-left: 2vw;
-    margin-right:2vw;
-    align-items: center;
-    display:flex;
-    flex-direction:column;
-    
+
+
+iframe#resume{
+    width: 70vw;
+    height: 95vh;
 }
 
 main#resume{
@@ -698,19 +709,55 @@ main#resume{
     
 }
 
+
+/* DESKTOP SCREENS */
+@media only screen and (min-width: 768px){ 
+    div.resume {
+        font-family:courier, fixed, monospace;
+        width:80vw;
+        margin-top:1vw;
+        margin-bottom:1vw;
+        margin-left: 2vw;
+        margin-right:2vw;
+        align-items: center;
+        display:flex;
+        flex-direction:column;
+        
+    }
+}
+
+/* MOBILE SCREENS */
 @media only screen and (max-width: 768px){
+    div.resume {
+        font-family:courier, fixed, monospace;
+        width:100vw;
+        /* margin-top:1vw;
+        margin-bottom:1vw;
+        margin-left: 2vw;
+        margin-right:2vw; */
+        align-items: center;
+        display:flex;
+        flex-direction:column;
+        
+    }
+
+   iframe#resume{
+       width: 80vw;
+       height:95vh;
+   }
+   
     main#resume{
-        margin-left:17.5vw;
-        margin-top: 10vw;
+        margin-left: 0rem;
+        margin-top: 15vw;
     }
     nav#rez{
-        width:6rem;
-        height: 100vh;
+        width:100vw;
+        height: 6vh;
         position: fixed;
         background-image:linear-gradient(to right, var(--darkCircle), var(--bigCircle), paleturquoise, beige);
         top: 0;
         display:flex;
-        flex-direction: column;
+        flex-direction: row;
         align-items:center;
         justify-content: space-evenly;
         transition:200ms ease;
@@ -727,8 +774,12 @@ main#resume{
     }
     
     nav#rez a.nav-link svg{
-        max-width:20vw;
-        min-width: 5rem;
+        width:10vw;
+        /* min-width: 3rem; */
+    }
+    div.LIwrap{
+        left: 2vw;
+    top: 15vw;
     }
 }
 
