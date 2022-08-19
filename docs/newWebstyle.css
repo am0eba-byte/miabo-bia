@@ -525,9 +525,10 @@ div.animation {
 }
 
 div.intern {
-    display: grid;
-    /* grid-template-columns: 30% 30% 30%; */
-    grid-template-rows: 50% 50%;
+    align-items: stretch;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
     background-image: linear-gradient(to top, beige, paleturquoise, beige);
     padding-top: 2%;
 
