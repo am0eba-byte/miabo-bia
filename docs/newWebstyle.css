@@ -25,10 +25,27 @@ body::-webkit-scrollbar-thumb{
     background: #358673;
 }
 
-main{
-    margin-left:10rem;
+
+
+
+/* DESKTOP SCREENS */
+@media only screen and (min-width: 768px) {
+
+    main{
+        margin-left:10rem;
+    
+    }
 
 }
+
+/* MOBILE SCREENS */
+@media only screen and (max-width: 769px){ 
+    main{
+        margin-top:10rem;
+    
+    }
+}
+
 
 
 
@@ -92,9 +109,6 @@ div.LIwrap{
     position: absolute;
 }
 
-nav:hover{
-    width:15rem;
-}
 
 nav:hover .link-text{
     display:contents;
@@ -127,14 +141,43 @@ nav:hover .link-text{
     text-decoration: none;
 }
 
+nav:hover{
+    width:15rem;
+}
+
 div.LIwrap{
- 
 right: 2vw;
 top: 1vw;
 }
 
-
 }
+
+/* MOBILE SCREENS */
+
+@media only screen and (max-width: 769px){
+    nav .nav-link{
+        display:flex;
+        flex-direction:column;
+        align-items: center;
+        width:inherit;
+        height: 5rem;
+        color:#1e1e24;
+        text-decoration: none;
+    }
+
+    .nav-link{
+        display:flex;
+        flex-direction:row;
+        align-items: center;
+        width:inherit;
+        height: 5rem;
+        color:#1e1e24;
+        text-decoration: none;
+    }
+    
+}
+
+
 .link-text{
     display:none;
     margin-left:1rem;
@@ -176,6 +219,22 @@ p.foot a:hover {
 
 /* HOMEPAGE */
 
+/* DESKTOP SCREENS */
+@media only screen and (min-width: 768px){ 
+
+    .headerBGwrap{
+        height: 70vh;
+    max-height:75%;
+    position: absolute;
+    z-index: -1;
+    width: 98vw;
+    top: 0;
+    right:0;
+    min-height:490px;
+    }
+
+}
+
 .headText{
     background-color: antiquewhite;
     border-radius: 5px;
@@ -186,19 +245,12 @@ padding-right: 10px;
 margin-top:10px;
 }
 
+
 section.headerBGwrap{
     background-image:url(images/flowerclouds.JPG);
-    height: 70vh;
-    max-height:75%;
-    position: absolute;
-    z-index: -1;
-    width: 98vw;
     background-repeat: no-repeat;
     background-size: cover;
-    top: 0;
-    right:0;
     opacity:.65;
-    min-height:490px;
 }
 
 .me {
@@ -751,9 +803,9 @@ main#resume{
         margin-left: 0rem;
         margin-top: 15vw;
     }
-    nav#rez{
+    nav{
         width:100vw;
-        height: 6vh;
+        height: 10%;
         position: fixed;
         background-image:linear-gradient(to right, var(--darkCircle), var(--bigCircle), paleturquoise, beige);
         top: 0;
@@ -765,16 +817,16 @@ main#resume{
         font-family: 'Josefin Sans', cursive;
     }
     
-    nav#rez:hover{
-        width:14rem;
+    nav:hover{
+        height:6rem
     }
     
-    nav#rez:hover .link-text{
+    nav:hover .link-text{
         display:contents;
-        
+        font-size: smaller;
     }
     
-    nav#rez a.nav-link svg{
+    nav a.nav-link svg{
         width:10vw;
         /* min-width: 3rem; */
     }
